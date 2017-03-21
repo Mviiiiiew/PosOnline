@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#B3E5FC"
+              android:orientation="vertical"
+              android:weightSum="2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+
+        >
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewOffice"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_home_100"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewEmployee"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_employee"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewConclude"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_coin"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:weightSum="3"
+        android:orientation="horizontal"
+
+        >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_Office"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:background="@color/colorBlue1"
+                android:text="ข้อมูลบริษัท"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_Employee"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:background="@color/colorBlue1"
+                android:text="ข้อมูลพนักงาน"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_Conclude"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:background="@color/colorBlue1"
+                android:text="สรุปยอดขายประจำวัน"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

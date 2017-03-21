@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#B3E5FC"
+              android:orientation="vertical"
+              android:weightSum="2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:paddingTop="30dp"
+
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_product_96"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_SettingCompany"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:background="@color/colorBlue1"
+                android:text="ข้อมูลสินค้า"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
