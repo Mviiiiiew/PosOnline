@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#fcfdfd"
+
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/companyCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รหัสบริษัท"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_companyCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_toRightOf="@+id/companyCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+                <TextView
+                    android:id="@+id/divisionCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/companyCode"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="รหัสสาขา"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionCode"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/divisionNameTh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionCode"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ชื่อสาขา"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionNameTh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionNameTh"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/divisionAddressShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionNameTh"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ที่อยู่สาขา"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionAddressShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionAddressShop"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/divisionTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionAddressShop"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="เบอร์โทร"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionTel"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/divisionFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionTel"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="เบอร์แฟกซ์"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionFax"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/divisionEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionFax"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_divisionEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/divisionEmail"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/CusTaxId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divisionEmail"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="รหัสเสียภาษี"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_CusTaxId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/CusTaxId"
+                    android:layout_alignLeft="@+id/txt_companyCode"
+                    android:layout_toRightOf="@+id/divisionCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

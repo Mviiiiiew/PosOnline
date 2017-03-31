@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/my_toolbar"
+            layout="@layout/toolbarproduct">
+
+        </include>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:src="@drawable/ic_arrowback"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:text="เพิ่มสินค้า"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                          >
+
+                <LinearLayout
+                    android:layout_width="500dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffffff"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:text="POSOnline : Register"
+                        android:textColor="#ff3eaff9"
+                        android:textSize="20sp"/>
+                    <EditText
+
+                        android:id="@+id/et_prodCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodCode"
+                        android:inputType="number"
+                        android:padding="@dimen/padding"/>
+                    <EditText
+                        android:id="@+id/et_prodTName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodTName"
+                        android:inputType="text"
+                        android:padding="@dimen/padding"/>
+
+                    <EditText
+
+                        android:id="@+id/et_prodIsVat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodIsVat"
+                        android:inputType="text"
+                        android:padding="@dimen/padding"/>
+                    <EditText
+
+                        android:id="@+id/et_prodGroupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodGroupName"
+                        android:inputType="text"
+                        android:padding="@dimen/padding"/>
+                    <EditText
+
+                        android:id="@+id/et_uomName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="uomName"
+                        android:inputType="text"
+                        android:padding="@dimen/padding"/>
+                    <EditText
+
+                        android:id="@+id/et_prodQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodQty"
+                        android:inputType="number"
+                        android:padding="@dimen/padding"/>
+
+                    <EditText
+
+                        android:id="@+id/et_prodUnitPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodUnitPrice"
+                        android:inputType="number"
+                        android:padding="@dimen/padding"/>
+
+                    <EditText
+
+                        android:id="@+id/et_prodUnitBarcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="prodUnitBarcode"
+                        android:inputType="text"
+                        android:padding="@dimen/padding"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="bottom|center"
+                android:background="#ff3eaff9"
+                android:text="OK"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

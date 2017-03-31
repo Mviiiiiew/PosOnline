@@ -31,4 +31,6 @@ dependencies {
     compile 'me.spark:submitbutton:1.0.1'
     compile 'com.github.medyo:fancybuttons:1.8.3'
     compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
 }

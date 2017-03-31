@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#fcfdfd"
+
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/empCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รหัสพนักงาน"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_toRightOf="@+id/empCode"
+                    android:text="รหัสบริษัท"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+                <TextView
+                    android:id="@+id/empPOSName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empCode"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ชื่อพนักงาน"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSName"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSName"
+                    android:text="ชื่อพนักงาน"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/empPOSPeopleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empPOSName"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="เลขบัตรประชาชน"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSPeopleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSPeopleId"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSPeopleId"
+                    android:text="เลขบัตรประชาชน"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/empPOSGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empPOSPeopleId"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="เพศ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSGender"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSGender"
+                    android:text="เพศ"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/empPOSAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empPOSGender"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ที่อยู่"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSAddress"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSAddress"
+                    android:text="ที่อยู่"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/empPOSTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empPOSAddress"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="เบอร์โทร"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSTel"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSTel"
+                    android:text="เบอร์โทร"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/empPOSEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empPOSTel"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_empPOSEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/empPOSEmail"
+                    android:layout_alignLeft="@+id/txt_empCode"
+                    android:layout_toRightOf="@+id/empPOSEmail"
+                    android:text="Email"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

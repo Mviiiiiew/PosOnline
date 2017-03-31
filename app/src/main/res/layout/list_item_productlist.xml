@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#fcfdfd"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/prodCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รหัสสินค้า"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="รหัสสินค้า"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+                <TextView
+                    android:id="@+id/prodTName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodCode"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ชื่อสินค้า"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodTName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prodTName"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="ชื่อสินค้า"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/prodIsVat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodTName"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="สถานะVat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodIsVat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prodIsVat"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="สถานะVat"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/prodGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodIsVat"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ชื่อกลุ่ม"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+                <TextView
+                    android:id="@+id/txt_prodGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชื่อกลุ่ม"
+                    android:textSize="@dimen/sizetxtend"
+                    android:layout_alignBaseline="@+id/prodGroupName"
+                    android:layout_alignBottom="@+id/prodGroupName"
+                    android:layout_alignLeft="@+id/txt_prodIsVat"
+                    android:layout_alignStart="@+id/txt_prodIsVat"/>
+
+                <TextView
+                    android:id="@+id/uomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodGroupName"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ชื่อหน่วย"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_uomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/uomName"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="ชื่อหน่วย"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/prodQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/uomName"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="จำนวนสินค้า"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prodQty"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="จำนวนสินค้า"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/prodUnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodQty"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="ราคาต่อชิ้น"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodUnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prodUnitPrice"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="ราคาต่อชิ้น"
+                    android:textSize="@dimen/sizetxtend"/>
+
+                <TextView
+                    android:id="@+id/prodUnitBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodUnitPrice"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:text="Barcode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sizetxtfront"/>
+
+                <TextView
+                    android:id="@+id/txt_prodUnitBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prodUnitBarcode"
+                    android:layout_alignLeft="@+id/txt_prodCode"
+                    android:layout_toRightOf="@+id/prodCode"
+                    android:text="Barcode"
+                    android:textSize="@dimen/sizetxtend"/>
+
+
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

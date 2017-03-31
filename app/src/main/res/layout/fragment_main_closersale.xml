@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.75"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="2"
 
 
         >
@@ -29,7 +29,7 @@
                 android:layout_height="69dp"
                 android:layout_gravity="bottom|center"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_dataproduct"/>
+                android:src="@drawable/ic_closersale"/>
         </FrameLayout>
 
         <FrameLayout
@@ -43,22 +43,10 @@
                 android:layout_height="69dp"
                 android:layout_gravity="bottom|center"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_upproduct"/>
+                android:src="@drawable/ic_checkcoin"/>
         </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
 
-            <ImageView
-                android:id="@+id/imageViewConclude"
-                android:layout_width="69dp"
-                android:layout_height="69dp"
-                android:layout_gravity="bottom|center"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_receive"/>
-        </FrameLayout>
 
 
     </LinearLayout>
@@ -69,7 +57,7 @@
         android:layout_height="0dp"
         android:layout_weight="1.25"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="2"
 
         >
 
@@ -80,12 +68,12 @@
             >
 
             <com.gc.materialdesign.views.ButtonRectangle
-                android:id="@+id/btn_ProductList"
+                android:id="@+id/btn_Product"
                 android:layout_width="250dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center|top"
                 android:background="@color/colorBlue1"
-                android:text="ข้อมูลสินค้า"
+                android:text="ปิดรายวัน"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
 
@@ -106,7 +94,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center|top"
                 android:background="@color/colorBlue1"
-                android:text="โอนสินค้า"
+                android:text="สรุปยอดรายวัน"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
 
@@ -115,26 +103,7 @@
 
         </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
 
-            <com.gc.materialdesign.views.ButtonRectangle
-                android:id="@+id/btn_Receiveproduct"
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center|top"
-                android:background="@color/colorBlue1"
-                android:text="รับสินค้า"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-
-                />
-
-
-        </FrameLayout>
 
 
     </LinearLayout>
